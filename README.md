@@ -60,4 +60,30 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
 ```
 Write this script, and then compile. Compile is can be run as press and hold a save button. If you did, then active your script. Don't ask me How to active please. Then, try your script by chatting. Then you can see a result that bot reply only "Hello World!" whatever what you send. When user use your bot, if bot reply only "Hello World!" without considering content then user will be get annoyed. So we have to write bot to reply specifically.
 ### Specifical Replication
-We get a problem that bot reply only "Hello World!" without considering content. But don't be frustrated. This problem can be solved easily with a conditional sentence, if. When you use if sentence, you will be use Boolean algebra.
+We get a problem that bot reply only "Hello World!" without considering content. But don't be frustrated. This problem can be solved easily with a conditional sentence, if. When you use if sentence, you will be use Boolean. As you know, Boolean is consist of True and False. Oops, although you don't know about Boolean, Never keep in mind. That is just a number. Let me show you a example,
+```js
+if (true) {
+    print("Hello World!");
+}
+```
+That's all. Output will be `Hello World!` because condition is true. With this, we get to able to solve the problem. Try to following script.
+```js
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    if (msg=='Hello'){
+        replier.reply("Hello! Nice to meet you!");
+    }
+}
+```
+Then, only when you send 'Hello', bot will reply 'Hello! Nice to meet you!' Like this, if you make some conditional sentence then bot will be able to say appropriately.
+### Long Scripts Problem
+If you code a lot then you will see your loooooooong script with a lot of if sentences. How can we write shortly? A lot of if sentences isn't seemed to nice. So we get to think how to write shortly. The anwser is using dictionary.
+```js
+var msgDict = {'Hello': "Hello World!", 'loli is': "LIFE!!!", 'XD': "lol"};
+
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    if (msg in msgDict){
+        replier.reply(msgDict[msg]);
+    }
+}
+```
+You can think there's something strange about it, but never keep in mind. ~~FBI OPEN UP!!!~~
