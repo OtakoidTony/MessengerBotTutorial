@@ -1,4 +1,4 @@
-# MessengerBotTutorial
+# Messenger Bot Tutorial
 Tutorials based on AutoReplyBot using javascript.
 
 ## Setup
