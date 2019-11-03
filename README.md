@@ -87,3 +87,42 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
 }
 ```
 You can think there's something strange about it, but never keep in mind. ~~**FBI OPEN UP!!!**~~
+If we use only if sentences then our script will be get too long like this.
+```js
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    if (msg=='Hello'){
+        replier.reply("Hello! Nice to meet you!");
+    }
+    if (msg=='loli is'){
+        replier.reply("LIFE!!!");
+    }
+    if (msg=='XD'){
+        replier.reply("lol");
+    }
+}
+```
+Of course, this script can be short by deleting lines like this.
+```js
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    if (msg=='Hello'  ){replier.reply("Hello! Nice to meet you!");}
+    if (msg=='loli is'){replier.reply("LIFE!!!");}
+    if (msg=='XD'     ){replier.reply("lol");}
+}
+```
+If you know about switch sentence then you will be able to write using ~~Nintendo~~ switch sentence like this.
+```
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    switch(msg){
+        case 'Hello' :
+            replier.reply("Hello! Nice to meet you!");
+            break;
+        case 'loli is' :
+            replier.reply("LIFE!!!");
+            break;
+        case 'XD' :
+            replier.reply("lol");
+            break;
+    }
+}
+```
+Well... When we extend conditions, we'd rather use dictionary.
