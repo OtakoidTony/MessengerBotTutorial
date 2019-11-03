@@ -53,3 +53,9 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
 ```
 Good. Then let's code a **Hello World!**
 ## Hello World!
+```js
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    replier.reply("Hello World!")
+}
+```
+Write this script, and then compile. Compile is can be run as press and hold a save button. If you did, then active your script. Don't ask me How to active please. Then, try your script by chatting. Then you can see a result that bot reply only "Hello World!" whatever what you send.
