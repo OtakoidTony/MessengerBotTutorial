@@ -109,7 +109,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
     if (msg=='XD'     ){replier.reply("lol");}
 }
 ```
-If you know about switch sentence then you will be able to write using ~~Nintendo~~ switch sentence like this.
+If you know about switch sentence then you will be able to write using switch sentence like this.
 ```js
 function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
     switch(msg){
