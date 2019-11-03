@@ -45,3 +45,9 @@ function onResume(activity) {}
 function onPause(activity) {}
 function onStop(activity) {}
 ```
+Because We will not develop deeply, delete some lines. When I developed, I used only response(). Then we get a simple script, like this.
+```js
+function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    
+}
+```
