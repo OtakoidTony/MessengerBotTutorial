@@ -86,7 +86,7 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
     }
 }
 ```
-You can think there's something strange about it, but never keep in mind. ~~**FBI OPEN UP!!!**~~
+You can think there's something strange about it, but never keep in mind. ~~**FBI OPEN UP!!!**~~  
 If we use only if sentences then our script will be get too long like this.
 ```js
 function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
