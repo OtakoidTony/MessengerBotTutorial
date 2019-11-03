@@ -125,4 +125,4 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
     }
 }
 ```
-Well... When we extend conditions, we'd rather use dictionary.
+Well... When we extend conditions, we'd rather use dictionary. With so far is enough to make a simple bot. So, From the next chapter, We will add some function.
