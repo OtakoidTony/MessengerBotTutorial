@@ -9,3 +9,4 @@ function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName,
 ```
 Veeeeeery Simple. Right?
 ## Whitelist and Blacklist
+In this time, we will use Array.
