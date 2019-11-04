@@ -78,9 +78,8 @@ Then, only when you send 'Hello', bot will reply 'Hello! Nice to meet you!' Like
 ### Long Scripts Problem
 If you code a lot then you will see your loooooooong script with a lot of if sentences. How can we write shortly? A lot of if sentences isn't seemed to nice. So we get to think how to write shortly. The anwser is using dictionary.
 ```js
-var msgDict = {'Hello': "Hello World!", 'loli is': "LIFE!!!", 'XD': "lol"};
-
 function response(room, msg, sender, isGroupChat, replier, ImageDB, packageName, threadId){
+    var msgDict = {'Hello': "Hello World!", 'loli is': "LIFE!!!", 'XD': "lol"};
     if (msg in msgDict){
         replier.reply(msgDict[msg]);
     }
